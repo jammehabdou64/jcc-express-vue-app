@@ -2,7 +2,7 @@ import { UsersController } from "@Controllers/UsersController";
 import { Auth } from "jcc-express-mvc/";
 import { Route } from "jcc-express-mvc/Route";
 
-Route.get("/", (req, res) => {
+Route.middleware("guest").get("/", (req, res) => {
   return res.inertia("Index");
 });
 

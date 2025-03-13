@@ -25,7 +25,7 @@
         <nav class="ml-auto flex gap-4 sm:gap-6">
           <Link
             class="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="/"
             >Docs</Link
           >
           <Link

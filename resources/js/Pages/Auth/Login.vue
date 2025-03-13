@@ -72,9 +72,8 @@
 </template>
 
 <script setup>
-import { Link, useForm, usePage } from "@inertiajs/vue3";
+import { Link, useForm } from "@inertiajs/vue3";
 import Header from "@/Components/Header.vue";
-const errors = usePage().props.errors;
 const form = useForm({
   email: "",
   password: "",

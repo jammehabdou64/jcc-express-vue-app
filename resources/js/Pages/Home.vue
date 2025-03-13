@@ -4,5 +4,4 @@
 <script setup>
 import { usePage } from "@inertiajs/vue3";
 const auth = usePage().props?.auth;
-// console.log(auth);
 </script>

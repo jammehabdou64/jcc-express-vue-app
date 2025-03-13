@@ -14,7 +14,7 @@
           Enter your information to create an account
         </div>
       </div>
-      <form>
+      <form @submit.prevent="submit">
         <div class="p-6 pt-0 space-y-4">
           <div class="space-y-2">
             <label class="input-label" for="name">Name</label
@@ -22,10 +22,12 @@
               class="form-control"
               id="name"
               placeholder="John Doe"
-              required=""
-              value=""
-              name="name"
+              v-model="form.name"
+              required
             />
+            <small v-if="form?.errors?.name" class="text-sm text-red-500">
+              {{ form?.errors?.name }}</small
+            >
           </div>
           <div class="space-y-2">
             <label class="input-label" for="email">Email</label
@@ -33,22 +35,26 @@
               class="form-control"
               id="email"
               placeholder="name@example.com"
-              required=""
+              required
               type="email"
-              value="admin@example.com"
-              name="email"
+              v-model="form.email"
             />
+            <small v-if="form?.errors?.email" class="text-sm text-red-500">
+              {{ form?.errors?.email }}</small
+            >
           </div>
           <div class="space-y-2">
             <label class="input-label" for="password">Password</label
             ><input
               class="form-control"
               id="password"
-              required=""
+              required
               type="password"
-              value="password"
-              name="password"
+              v-model="form.password"
             />
+            <small v-if="form?.errors?.password" class="text-sm text-red-500">
+              {{ form?.errors?.password }}</small
+            >
           </div>
           <div class="space-y-2">
             <label class="input-label" for="confirm-password"
@@ -56,11 +62,16 @@
             ><input
               class="form-control"
               id="confirm-password"
-              required=""
+              required
               type="password"
-              value=""
-              name="confirmPassword"
+              v-model="form.confirmPassword"
             />
+            <small
+              v-if="form?.errors?.confirmPassword"
+              class="text-sm text-red-500"
+            >
+              {{ form?.errors?.confirmPassword }}</small
+            >
           </div>
         </div>
         <div class="items-center p-6 pt-0 flex flex-col space-y-4">
@@ -89,7 +100,6 @@ const form = useForm({
 });
 
 const submit = () => {
-  console.log(form);
-  return alert("Welcome");
+  form.post("/auth/register");
 };
 </script>
