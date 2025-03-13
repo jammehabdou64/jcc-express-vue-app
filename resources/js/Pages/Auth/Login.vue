@@ -1,4 +1,8 @@
 <template>
+  <Head>
+    <title>Login</title>
+    <meta name="description" content="Your page description" />
+  </Head>
   <Header />
   <div
     class="container mx-auto flex items-center justify-center min-h-[calc(100vh-4rem)] py-12"
@@ -70,7 +74,7 @@
 </template>
 
 <script setup>
-import { Link, useForm } from "@inertiajs/vue3";
+import { Link, useForm, Head } from "@inertiajs/vue3";
 import Header from "@/Components/Header.vue";
 const form = useForm({
   email: "",

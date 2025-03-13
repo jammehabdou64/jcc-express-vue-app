@@ -20,7 +20,7 @@
             <line x1="6" x2="6.01" y1="6" y2="6"></line>
             <line x1="6" x2="6.01" y1="18" y2="18"></line>
           </svg>
-          <span class="font-bold">Express Framework</span>
+          <span class="font-bold">JCC Framework</span>
         </Link>
         <nav class="ml-auto flex gap-4 sm:gap-6">
           <Link

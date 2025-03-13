@@ -1,4 +1,8 @@
 <template>
+  <Head>
+    <title>Welcome</title>
+    <meta name="description" content="Your page description" />
+  </Head>
   <Header />
   <div class="flex flex-col min-h-screen">
     <!--  Hero Section  -->
@@ -11,7 +15,7 @@
             <h1
               class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl"
             >
-              JCC Express Framework Simplified
+              JCC Framework Simplified
             </h1>
             <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
               A powerful, lightweight framework built on top of Express.js for
@@ -192,7 +196,7 @@
 </template>
 
 <script setup>
-import { Link } from "@inertiajs/vue3";
+import { Link, Head } from "@inertiajs/vue3";
 import {
   ServerIcon,
   LockClosedIcon,
