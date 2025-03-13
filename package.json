@@ -7,7 +7,7 @@
     "dev": "tsx watch --require tsconfig-paths/register server.ts",
     "watch": "vite",
     "build": "tsc && ts-node artisanNode build",
-    "vite-build": "vite build"
+    "vite-build": "vite build && vite build --ssr"
   },
   "keywords": [],
   "author": "",

@@ -24,7 +24,6 @@
               required
               v-model="form.email"
               type="email"
-              value="admin@example.com"
               name="email"
             />
             <small v-if="form?.errors?.email" class="text-sm text-red-500">
@@ -46,7 +45,6 @@
               required
               v-model="form.password"
               type="password"
-              value="password"
               name="password"
             />
           </div>
