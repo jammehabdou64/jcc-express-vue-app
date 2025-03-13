@@ -197,6 +197,7 @@
 
 <script setup>
 import { Link, Head } from "@inertiajs/vue3";
+import Header from "@/Components/Header.vue";
 import {
   ServerIcon,
   LockClosedIcon,
@@ -204,8 +205,4 @@ import {
   CodeBracketIcon,
   ArrowRightIcon,
 } from "@heroicons/vue/24/outline";
-
-import Header from "@/Components/Header.vue";
-
-const title = "Hello ";
 </script>
