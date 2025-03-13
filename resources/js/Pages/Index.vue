@@ -161,13 +161,13 @@
             </p>
           </div>
           <div class="space-x-4">
-            <Link href="/auth/register">
+            <Link href="/register">
               <button class="primary-button">
                 Sign Up Now
                 <ArrowRightIcon class="ml-2 h-4 w-4" />
               </button>
             </Link>
-            <Link href="/auth/login">
+            <Link href="/login">
               <button class="secondary-button">Login</button>
             </Link>
           </div>
@@ -183,11 +183,10 @@
         >
           <div class="flex items-center space-x-2">
             <Server class="h-6 w-6" />
-            <span class="text-lg font-bold">JCC Express Framework</span>
+            <span class="text-lg font-bold">JCC Framework</span>
           </div>
           <p class="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Express Framework. All rights
-            reserved.
+            © {new Date().getFullYear()} Framework. All rights reserved.
           </p>
         </div>
       </div>
