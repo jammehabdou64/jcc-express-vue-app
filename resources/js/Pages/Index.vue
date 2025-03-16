@@ -29,9 +29,12 @@
                 <ArrowRightIcon class="ml-2 h-4 w-4" />
               </button>
             </Link>
-            <Link href="#">
+            <a
+              href="https://github.com/jammehabdou64/new-jcc-express-mvc-app"
+              target="_blank"
+            >
               <button class="secondary-button">Documentation</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
