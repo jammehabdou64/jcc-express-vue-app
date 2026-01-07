@@ -10,7 +10,7 @@ export default defineConfig({
       refresh: true,
       ssr: "resources/js/ssr.js",
     }),
-    vue(),
+    vue({}),
     tailwind(),
   ],
 });
