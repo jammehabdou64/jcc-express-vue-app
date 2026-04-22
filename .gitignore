@@ -10,6 +10,7 @@
 # production
 /build
 /public/build
+/public/hot
 /bootstrap
 /dist
 # misc
@@ -19,5 +20,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
+storage/framework
 
